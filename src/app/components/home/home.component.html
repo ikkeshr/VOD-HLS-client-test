@@ -1,0 +1,11 @@
+<div class="root">
+    <div class="wrap">
+        <app-video-player [src]="srcUrl"></app-video-player>
+        <div class="conf-wrap" [formGroup]="configForm">
+            <div class="url">
+                <input type="text" formControlName="url" placeholder="http://192.168.100.13/hlm/playlist.m3u8">
+                <button (click)="submitConfig()">Play</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.root {
+    // background-color: red;
+    min-width: 100%;
+    min-height: 100%;
+
+    .wrap {
+        width: fit-content;
+        // background-color: hotpink;
+        text-align: center;
+
+        .conf-wrap {
+            // background-color: aqua;
+            padding: 12px 0px 12px 0px;
+            .url {
+                // background-color: blue;
+                display: flex;
+
+                input {
+                    padding: 10px;
+                    width: 85%;
+                }
+                button {
+                    width: 15%;
+                    background-color: darkgreen;
+                    color: white;
+                }
+            }
+        }
+    }
+}
