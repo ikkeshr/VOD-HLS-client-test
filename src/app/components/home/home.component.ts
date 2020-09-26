@@ -18,7 +18,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.configForm = this.formBuilder.group({
-      url: [null, Validators.required]
+      url: [
+        'http://192.168.100.13/hls/takeonme/playlist.m3u8', 
+         Validators.required
+      ]
     });
   }
 

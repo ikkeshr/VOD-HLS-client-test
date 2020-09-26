@@ -4,7 +4,8 @@
     min-height: 100%;
 
     .wrap {
-        width: fit-content;
+        max-width: inherit;
+        min-width: 320px;
         // background-color: hotpink;
         text-align: center;
 
@@ -25,6 +26,12 @@
                     color: white;
                 }
             }
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        .wrap {
+            max-width: 600px;
         }
     }
 }

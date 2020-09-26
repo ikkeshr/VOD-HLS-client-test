@@ -14,8 +14,8 @@ export class VideoPlayerComponent implements OnInit {
 
   player: videojs.Player;
 
-  @Input("width") width: number = 500;
-  @Input("height") height: number = 300;
+  @Input("width") width: number;
+  @Input("height") height: number;
   @Input("src") src: string;
 
   constructor() { }
@@ -30,6 +30,7 @@ export class VideoPlayerComponent implements OnInit {
       controls: true,
       width: this.width,
       height: this.height,
+      fluid: true,
       sources: [
         {
           src: (this.src) ? this.src : "https://multiplatform-f.akamaihd.net/i/multi/will/bunny/big_buck_bunny_,640x360_400,640x360_700,640x360_1000,950x540_1500,.f4v.csmil/master.m3u8",
